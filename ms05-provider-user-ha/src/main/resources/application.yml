@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ms05-discovery-eureka-ha
+
+---
+
+spring:
+  profiles:
+    active: peer1
+server:
+  port: 9005
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8005/eureka/
+      
+---
+
+spring:
+  profiles:
+    active: peer2
+server:
+  port: 8005
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:9005/eurteka/

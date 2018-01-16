@@ -1,0 +1,9 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: ms12-simple-consumer-movie-understanding-metadata
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9003/eureka/

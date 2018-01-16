@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: ms12-simple-consumer-movie-understanding-metadat
+ a
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: gh
+Implementation-Vendor-Id: org.gh
+Build-Jdk: 1.8.0_144
+Implementation-URL: http://projects.spring.io/spring-boot/ms12-simple-
+ consumer-movie-understanding-metadata/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

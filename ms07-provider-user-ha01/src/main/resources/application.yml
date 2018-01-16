@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ms07-provider-user-ha01
+server:
+  port: 9007
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:9008/eureka/

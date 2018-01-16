@@ -1,6 +1,5 @@
 server:
   port: 9004
-  
 spring:
   application:
     name: ms04-provider-user
@@ -10,5 +9,8 @@ eureka:
       defaultZone:  http://localhost:9003/eureka/
   instance: 
     prefer-ip-address: true
+  server:
+    enable-self-preservation: false  #关闭程序自我保护
+    
 
       

@@ -1,0 +1,12 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: ms05-consumer-movie
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9003/eureka/
+  instance:
+    prefer-ip-address: true
+  

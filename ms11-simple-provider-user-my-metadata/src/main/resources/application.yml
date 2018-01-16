@@ -1,0 +1,18 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: ms11-simple-provider-user-my-metadata
+logging:
+  level:
+    root: INFO
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9003/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      name: gh
+      company: ym
+    

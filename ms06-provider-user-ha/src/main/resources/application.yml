@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ms06-provider-user-ha
+
+---
+
+spring:
+  profiles:
+    active: peer1
+server:
+  port: 9006
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8006/eureka/
+      
+---
+
+spring:
+  profiles:
+    active: peer2
+server:
+  port: 8006
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:9006/eurteka/
